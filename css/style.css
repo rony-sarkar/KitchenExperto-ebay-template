@@ -474,13 +474,14 @@ table tr td {
 }
 
 .product-dec ul {
-    margin-bottom: 10px;
+    margin-bottom: 10px !important;
 }
 
 .product-dec ul li {
-    list-style: none;
-    padding: 5px 20px;
-    position: relative;
+	list-style: none;
+	padding: 5px 20px;
+	position: relative;
+	font-size: 14px;
 }
 
 .product-dec ul li::before {
@@ -489,6 +490,12 @@ table tr td {
     font-family: fontawesome;
     left: 0;
     color: #1D344A;
+}
+.product-dec ul.no-checked li{
+    padding-left: 0 !important;
+}
+ul.no-checked li::before{
+ display: none;
 }
 
 /*  ================================
